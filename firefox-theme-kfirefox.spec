@@ -11,15 +11,17 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
 Source: http://kfirefox.googlecode.com/files/kfirefox0%{ver}.jar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{ff_epoch}:%{ff_ver}
-Obsoletes: mozilla-firefox-theme-kdeff <= 0.14
+Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
 Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
+Obsoletes: mozilla-firefox-theme-kde4ff <= 0.14
+Provides: mozilla-firefox-theme-kde4ff = %{version}-%{release}
 
 %description
 KFirefox is a KDE4-like theme using Oxygen icons for Mozilla Firefox 3.
