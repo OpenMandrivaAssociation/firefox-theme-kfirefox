@@ -2,7 +2,7 @@
 %define debug_package          %{nil}
 
 %define ff_epoch 0
-%define ff_ver 3.5.1
+%define ff_ver 3.5.2
 %define ver 16
 
 %define _mozillapath %{_libdir}/firefox-%{ff_ver}
@@ -11,7 +11,7 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
