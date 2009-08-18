@@ -1,23 +1,20 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define ff_epoch 0
-%define ff_ver 3.5.2
 %define ver 16
 
-%define _mozillapath %{_libdir}/firefox-%{ff_ver}
-%define _mozillaextpath %{_mozillapath}/extensions
+%define _mozillaextpath %{firefox_mozillapath}/extensions
 
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 4
+Release: %mkrel 5
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
 Source: http://kfirefox.googlecode.com/files/kfirefox0%{ver}.jar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: firefox = %{ff_epoch}:%{ff_ver}
+Requires: firefox = %{firefox_epoch}:%{firefox_version}
 Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
 Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
 Obsoletes: firefox-theme-kde4ff <= 0.16
@@ -55,5 +52,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%dir %_mozillapath
+%dir %firefox_mozillapath
 %{_mozillaextpath}
