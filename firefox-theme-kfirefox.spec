@@ -19,6 +19,7 @@ Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
 Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
 Obsoletes: firefox-theme-kde4ff <= 0.16
 Provides: firefox-theme-kde4ff = %{version}-%{release}
+BuildRequires: firefox-devel
 
 %description
 KFirefox is a KDE4-like theme using Oxygen icons for Mozilla Firefox 3.
