@@ -8,7 +8,7 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 6
+Release: %mkrel 7
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
@@ -20,7 +20,7 @@ Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
 Obsoletes: firefox-theme-kde4ff <= 0.16
 Provides: firefox-theme-kde4ff = %{version}-%{release}
 %if %mdkversion >= 201000
-Obsoletes: firefox-theme-kdeff <= 0.4-18mdv
+Obsoletes: firefox-theme-kdeff < 0.4-19mdv
 %endif
 BuildRequires: firefox-devel
 
