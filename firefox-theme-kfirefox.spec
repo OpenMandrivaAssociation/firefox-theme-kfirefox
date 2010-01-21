@@ -1,14 +1,14 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define ver 17
+%define ver 16
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 10
+Release: %mkrel 11
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
