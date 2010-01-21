@@ -1,7 +1,7 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define ver 16
+%define ver 17
 
 %define _mozillaextpath %{firefox_mozillapath}/extensions
 
