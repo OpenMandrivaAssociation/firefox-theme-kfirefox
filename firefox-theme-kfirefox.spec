@@ -8,7 +8,7 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kfirefox
 Version: 0.%{ver}
-Release: %mkrel 14
+Release: %mkrel 15
 License: GPLv3
 Group: Networking/WWW
 URL: http://ramonantonio.net/kde-firefox/
