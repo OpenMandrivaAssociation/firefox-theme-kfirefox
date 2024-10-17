@@ -11,7 +11,7 @@ Version: 0.%{ver}
 Release: %mkrel 18
 License: GPLv3
 Group: Networking/WWW
-URL: http://ramonantonio.net/kde-firefox/
+URL: https://ramonantonio.net/kde-firefox/
 Source: http://kfirefox.googlecode.com/files/kfirefox0%{ver}.jar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{firefox_epoch}:%{firefox_version}
